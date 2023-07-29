@@ -1,1 +1,44 @@
-Try
+<html>
+<head>
+    <title> Drop Join Form </title>
+    <style>
+        body {
+            font-family : Arial, sans-serif;
+        }
+        h1 {
+            text-align : center;
+        }
+        form { margin : auto; max-width: 500px;
+        }
+        label {
+            display : block; margin-bottom: 10px;
+        }
+        input[type = "text"], input[type = "email"], textarea { padding: 10px; width: 100%; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; margin-bottom: 20px;
+        }
+        submit{
+            background-color : #4CAF50;
+            color : #fff;
+            padding : 10px 20px; border :  none; border-radius : 4px; cursor : pointer;
+        }
+        button:hover {
+            background-color : #3e8e41;
+        }
+    </style>
+</head>
+<body>
+<h1> Join </h1>
+<form method = "post" action = "sendmail.php">
+    <label for = "name" > Name: </label>
+    <input type = "text" name = "name" id = "name" required>
+    <label for = "email" > Email: </label>
+    <input type = "email" name = "email" id = "email" required>
+    <label for = "message" > Message: </label>
+    <textarea name = "message" id = "message" required></textarea>
+    <button type = ”submit” name = ”submit”> Submit </button>
+
+</form>
+
+</body>
+
+</html>
+
